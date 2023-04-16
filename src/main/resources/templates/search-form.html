@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title> Search by city and country</title>
+</head>
+<body>
+<div class="container">
+    <h3>Check Weather details</h3>
+    <hr>
+    <p class="h4 mb-4">Search</p>
+    <form action="#" th:action="@{/current-weather}"
+          th:object="${currentWeather}" method="POST">
+
+
+        <!-- add a hidden form field-->
+        <input type="text" th:field="*{city}"
+               class="form-control mb-4 w-25" placeholder="City Name">
+        <input type="text" th:field="*{country}"
+               class="form-control mb-4 w-25" placeholder="Country Name">
+        <button type="submit" class="btn btn-info col-2">Submit</button>
+    </form>
+</div>
+
+
+</body>
+
+
+</html>
