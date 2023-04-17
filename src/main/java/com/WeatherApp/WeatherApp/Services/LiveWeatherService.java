@@ -19,7 +19,8 @@ public class LiveWeatherService {
     private static final String WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?q={city},{country}&APPID={key}&units=metric";
 
     //@Value("${api.openweathermap.key}")
-    private String apiKey="7d2331e11e25a7c668ffcfa711c43d74";
+    //Please generate open weather api key and enter the api key here 
+    private String apiKey="";
 
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
