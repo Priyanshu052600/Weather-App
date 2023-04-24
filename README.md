@@ -8,6 +8,7 @@ To use the app:
 Download the folder
 unzip the folder
 open in any IDE
+Generate an API key from openweather and insert that API key to the LiveWeatherService class of the project.
 RUN the main class by selecting run as java project 
 goto http://localhost:8080
 you will be able to see the home page for the search weather by city
